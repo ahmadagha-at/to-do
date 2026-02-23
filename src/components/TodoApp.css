@@ -1,0 +1,65 @@
+.todo-container {
+    background: var(--card-bg);
+    backdrop-filter: var(--glass-effect);
+    -webkit-backdrop-filter: var(--glass-effect);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.todo-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.todo-header p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.todo-filters {
+    display: flex;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.25rem;
+    border-radius: 12px;
+}
+
+.todo-filters button {
+    flex: 1;
+    padding: 0.6rem;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.todo-filters button.active {
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.clear-btn {
+    margin-top: 1rem;
+    background: transparent;
+    color: var(--danger);
+    font-size: 0.85rem;
+    font-weight: 600;
+    opacity: 0.8;
+    align-self: center;
+}
+
+.clear-btn:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
